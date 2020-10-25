@@ -1,0 +1,30 @@
+Document: [https://github.com/khaitruong1301/bookingticket_cybersoft]
+
+Link API Movie: [https://movie0706.cybersoft.edu.vn/swagger/index.html]
+
+Link API Elearning: [https://elearning0706.cybersoft.edu.vn/swagger/index.html]
+
+Install library to devide pages
+npm install react-router-dom --save
+
+
+<Route exact path="/" component={HomePage} /> 
+=> exact: help to prevent to call again in path="/about"
+
+SINGLE PAGE
+
+Replace:
+
+<a className="nav-link" href="/movie-list">   Movie List      </a>
+
+With:
+
+  <Link className="nav-link" to="/movie-list">   Movie List      </Link>
+
+Gan class "active" cho current page => user biet minh dang dung o dau
+background-color: antiquewhite;
+
+- INSTALL AXIOS
+npm install axios --save
+
+Dung axios keo API ve
