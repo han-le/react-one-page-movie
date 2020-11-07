@@ -28,3 +28,11 @@ background-color: antiquewhite;
 npm install axios --save
 
 Dung axios keo API ve
+
+----------------------
+REDUX
+
+Tao foler module cos constant, action, reducers
+Viet code cho tung file nay
+
+Qua rootReducer combine cai reducer moi viet lai

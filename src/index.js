@@ -14,12 +14,17 @@ import "../node_modules/popper.js/dist/umd/popper.min";
 
 //============ REDUX
 import { createStore } from "redux";
+import { applyMiddleware, compose } from "redux"; //thu vien bat dong bo
+import thunk from "redux-thunk"; //thu vien bat dong bo
 import { Provider } from "react-redux";
 import rootReducer from "./redux/reducers";
 
+//Giai quyet viec bat dong bo reducer
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+
 const store = createStore(
   rootReducer,
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+  composeEnhancers(applyMiddleware(thunk))
 );
 
 ReactDOM.render(
