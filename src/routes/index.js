@@ -5,6 +5,8 @@ import DetailPage from "../containers/HomeTemplate/DetailPage";
 import HocPage from "../containers/HomeTemplate/HOCPage";
 import DashBoard from "../containers/AdminTemplate/DashBoard";
 import UserPage from "../containers/AdminTemplate/User";
+import HooksPage from "../containers/HomeTemplate/HooksPage";
+import MaterialPage from "../containers/HomeTemplate/MaterialPage";
 
 const routeHome = [
   {
@@ -33,6 +35,16 @@ const routeHome = [
     exact: false,
     path: "/hoc",
     component: HocPage,
+  },
+  {
+    exact: false,
+    path: "/hooks",
+    component: HooksPage,
+  },
+  {
+    exact: false,
+    path: "/material",
+    component: MaterialPage,
   },
 ];
 

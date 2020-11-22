@@ -6,6 +6,8 @@ import WithModal from "./WithModal";
 const ModalForm = WithModal(NhanVien);
 
 export default class HocPage extends Component {
+  state = {};
+
   render() {
     return (
       <div className="container">
@@ -14,6 +16,9 @@ export default class HocPage extends Component {
         {/* <SanPham /> */}
 
         <ModalForm />
+        <hr></hr>
+        {/* <h3>Number: {this.state.number}</h3> */}
+        <button>Add</button>
       </div>
     );
   }

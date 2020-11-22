@@ -39,7 +39,7 @@ class UserPage extends Component {
           <div className="alert alert-danger">You don't have token yet</div>
         );
       if (error.response && error.response.data) {
-        return <div className="alert alert-danger">{error.response.data}</div>;
+        return <div className="alert alert-danger">{error.response.datad}</div>;
       }
     }
   };

@@ -62,19 +62,31 @@ export default class NavbarHome extends Component {
                   HOC
                 </NavLink>
               </li>
+              <li className="nav-item">
+                <NavLink
+                  activeClassName="active"
+                  className="nav-link"
+                  to="/hooks"
+                >
+                  Hooks
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink
+                  activeClassName="active"
+                  className="nav-link"
+                  to="/material"
+                >
+                  Material
+                </NavLink>
+              </li>
             </ul>
             <form className="form-inline my-2 my-lg-0">
-              <input
-                className="form-control mr-sm-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
               <button
                 className="btn btn-outline-success my-2 my-sm-0"
                 type="submit"
               >
-                Search
+                Log In
               </button>
             </form>
           </div>
